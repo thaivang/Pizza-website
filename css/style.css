@@ -1,0 +1,185 @@
+h1,
+    h2 {
+    text-align: center;
+    background-color: lightblue; 
+    border-style: ridge; 
+    border-color: yellow;
+}
+
+/* menu heading */
+.menu-pizza {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* pizza size styles */
+#frmMenu {
+    text-align: center;
+    position: relative;
+    width: 90%;
+    margin-top: 50px;
+    color: black;
+    padding-left: 100px; 
+}
+
+/* image radio */
+input[type=radio]:checked + label>img {
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 5px 5px rgb(255, 0, 0);
+    
+}
+
+/* pointer when hover */
+input[type=radio] + label>img {
+    cursor: pointer;
+}
+
+/* radio button is hidden */
+.hidden {
+    visibility: hidden;
+}
+
+/* border styles */
+.card-group {
+    border: 3px dashed red;
+}
+
+/* second radio for sauce-image */
+.sauce-image {
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border-style: dotted solid;
+    width: 150px;
+    border-color: rgb(0, 0, 0);
+
+}
+
+.cheese-image {
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+}
+
+h5 {
+    border-style: solid;
+    border-color: yellow;
+    background: white;
+}
+
+/* radio for class crust */
+input.crust[type=radio]:checked + label {
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 5px 5px rgb(255, 0, 0);
+    
+}
+
+/* radio for class crust */
+input.crust[type=radio] + label {
+    cursor: pointer;
+}
+
+/* ========= */
+.button {
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	border-radius: .5em;
+	margin: 20px;
+	padding: 10px 10px 0px 0px;
+    font: 18px sans-serif;
+	background-color: rgba(42, 76, 132, .95); /*#6486bc;*/
+	box-shadow: 0 0 0 2px rgba(255,255,255, .8);
+	transition-duration: .5s, .5s, .5s;
+	transition-timing-function: eas-in-out;
+}
+
+.button>p {
+	text-align: center;
+	font-weight: bold;
+}
+
+.button:hover {
+	font: 18px sans-serif;
+	font-weight: bold;
+	color: #000;
+	background-color: rgba(255, 255, 255, .6);
+	box-shadow: 0 0 0 2px #080054;
+}
+
+.controls {
+	display: flex;
+    flex-direction: columns;
+    justify-content: space-between;
+	margin: auto;
+	width: 550px;
+}
+
+
+
+#totalPrice { 
+	width: 40%;
+	margin: 40px 0 0 0;
+	float: left; 
+}
+
+#cart {
+	opacity: 0;
+	margin: 15px auto;
+	width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	background-color: rgba(244, 245, 247, 0.9);
+	border: 2px solid #080054;
+	box-shadow: 0 0 0 3px rgba(255,255,255, .8);
+	border-radius: 25px;
+}
+
+#title1 {
+    margin: 20px 80px 20px 10px;
+}
+
+#title2 {
+    margin: 20px 80px 20px 10px;
+}
+
+#showText1 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#showText2 {
+	font-size: 13px;
+	
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice1 {
+	flex: 1 250px;
+	padding: 0 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice2 {
+	flex: 1 250px;
+	font-weight: bold;
+	padding: 0px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#footer {
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.685);
+}
