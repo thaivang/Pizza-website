@@ -1,6 +1,8 @@
-#The Tech Academy projects
+# Pizza Website
+Create a pizza website that allows a user to create a cutom order and return the total amount to the user.
 
-Pizza-website
-
-Created using HTML, CSS, and Javascript 
+Languages used:
+* HTML
+* CSS
+* Javascript 
 
