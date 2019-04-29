@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,184 +7,177 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <title>Pizza</title>
-        <h1>Pizza Planet</h1>
-        <style>
-        </style>
+        <title>Famous Thai's Pizza</title>
     </head>
 
     <body background="images/wood.jpeg">
         <div class="container">
             <!--Main content-->
+            <h1>Famous Thai's Pizza</h1>
             <h1>Choose your pizza size: </h1>
 
-            <form id ="frmMenu">
+            <form id="frmMenu">
                 <!--Pizza sizes-->
                 <div class="menu row">
-                    <div class="col ">
-                        <input type="radio" name="size" id="personal" class="hidden size" value="Personal Pizza">  
+                    <div class="col">
+                        <h5>Personal</h5>
+                        <input type="radio" name="size" id="personal" class="hidden size" value="Personal Pizza">
                         <label for="personal">
-                            <h5>Personal</h5>
                             <img src="./images/pizza-size.jpeg" alt="Personal pizza" height="100" width="100">
                         </label>
                         <h5>Price: $6.00</h5><br>
                     </div>
-                    
+
                     <div class="col">
+                        <h5>Medium</h5>
                         <input type="radio" name="size" id="medium" class="hidden size" value="Medium Pizza">
-                        <label for="medium">
-                            <h5>Medium</h5>
+                        <label for="medium">                            
                             <img src="./images/pizza-size.jpeg" alt="Medium pizza" height="100" width="100">
                         </label>
-                        <h5>Price:$10.00</h5><br>
+                        <h5>Price: $10.00</h5><br>
                     </div>
 
                     <div class="col">
-                        <input type="radio" name="size" id="large" class="hidden size" value="Large Pizza">
-                        <label for="large">
-                            <h5>Large</h5>
+                        <h5>Large</h5>
+                        <input type="radio" name="size" id="large" class="hidden size" value="Large Pizza">                        
+                        <label for="large">                           
                             <img src="./images/pizza-size.jpeg" alt="large pizza" height="100" width="100">
                         </label>
                         <h5>Price: $14.00</h5><br>
                     </div>
 
                     <div class="col">
+                        <h5>Extra Large</h5>
                         <input type="radio" name="size" id="extralarge" class="hidden size" value="Extra Large Pizza">
                         <label for="extralarge">
-                            <h5>Extra Large</h5>
                             <img src="./images/pizza-size.jpeg" alt="extra large pizza" height="100" width="100">
                         </label>
-                    <h5>Price: $16.00</h5>
+                        <h5>Price: $16.00</h5>
                     </div>
                 </div>
                 <!--/Pizza sizes-->
 
                 <!--Meats-->
                 <div class="menu">
-                <div class="col mb-5 mt-5">
-                    <h5>*What kind of meat would you like?:</h5>
-                    <h6>*First choice of meat is complimentary with an additional charge of $1 for extra add-ons</h6>
-
-                    <div class="card-group">
-                        <div class="card border-primary" style="width: 10rem;">
-                            <img class="card-img-top" src="./images/pepperoni.jpg" alt="Picture of a pepperoni">
-                            <div class="card-body">
-                                <input class="meats" type="checkbox" name="Meat" value="pepperoni"> 
-                                <p class="card-text">Pepperoni</p>
+                    <div class="col mb-5 mt-5">
+                        <h5>What kind of meat would you like?</h5>
+                        <h5>*First choice of meat is complimentary with an additional charge of $1 for extra add-ons</h5>
+                        <div class="row d-flex justify-content-center">           
+                            <div class="card" style="width: 10rem;">
+                                <img class="card-img-top" src="./images/pepperoni.jpg" alt="Picture of a pepperoni">
+                                <div class="card-body">
+                                    <input class="meats" type="checkbox" name="Meat" value="pepperoni">
+                                    <p class="card-text">Pepperoni</p>
+                                </div>
                             </div>
+
+                            <div class="card" style="width: 10rem;">
+                                <img class="card-img-top" src="./images/sausage.jpg" alt="Picture of a sausage">
+                                <div class="card-body">
+                                    <input class="meats" type="checkbox" name="Meat" value="sausage">
+                                    <p class="card-text">Sausage</p>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 10rem;">
+                                <img class="card-img-top" src="./images/bacon.jpg" alt="Picture of a bacon">
+                                <div class="card-body">
+                                    <input class="meats" type="checkbox" name="Meat" value="bacon">
+                                    <p class="card-text">Bacon</p>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 10rem;">
+                                <img class="card-img-top" src="./images/ground-beef.jpg" id="groundBeef" alt="Picture of ground beef">
+                                <div class="card-body">
+                                    <input class="meats" type="checkbox" name="Meat" value="groundbeef">
+                                    <p class="card-text">Ground Beef</p>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 10rem;">
+                                <img class="card-img-top" src="./images/anchovy.jpg" alt="Picture of anchovy">
+                                <div class="card-body">
+                                    <input class="meats" type="checkbox" name="Meat" value="anchovy">
+                                    <p class="card-text">Anchovy</p>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 10rem;">
+                                <img class="card-img-top" src="./images/chicken.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <input class="meats" type="checkbox" name="Meat" value="chicken">
+                                    <p class="card-text">Chicken</p>
+                                </div>
+                            </div>                            
                         </div>
-                        
-                        <div class="card border-info" style="width: 10rem;">
-                            <img class="card-img-top" src="./images/sausage.jpg" alt="Picture of a sausage">
-                            <div class="card-body">
-                                <input class="meats" type="checkbox" name="Meat" value="sausage"> 
-                                <p class="card-text">Sausage</p>
-                            </div>
-                        </div>
-
-                        <div class="card border-warning" style="width: 10rem;">
-                            <img class="card-img-top" src="./images/bacon.jpg" alt="Picture of a bacon">
-                            <div class="card-body">
-                                <input class="meats" type="checkbox" name="Meat" value="bacon"> 
-                                <p class="card-text">Bacon</p>
-                            </div>
-                        </div>
-
-                        <div class="card border-success" style="width: 10rem;">
-                            <img class="card-img-top" src="./images/ground-beef.jpg" height="140px" alt="Picture of ground beef">
-                            <div class="card-body">
-                                <input class="meats" type="checkbox" name="Meat" value="groundbeef"> 
-                                <p class="card-text">Ground Beef</p>
-                            </div>
-                        </div> 
-                        
-                        <div class="card border-danger" style="width: 10rem;">
-                            <img class="card-img-top" src="./images/anchovy.jpg" alt="Picture of anchovy">
-                            <div class="card-body">
-                                <input class="meats" type="checkbox" name="Meat" value="anchovy"> 
-                                <p class="card-text">Anchovy</p>
-                            </div>
-                        </div>  
-
-                        <div class="card border-warning" style="width: 10rem;">
-                            <img class="card-img-top" src="./images/chicken.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <input class="meats" type="checkbox" name="Meat" value="chicken"> 
-                                <p class="card-text">Chicken</p>
-                            </div>
-                        </div>  
-
                     </div>
                 </div>
-                </div>
                 <!--/Meats-->
-
+                
                 <!--Sauce-->
-
                 <div class="menu">
-                        <h5>What kind of sauce would you like?</h5>
+                    <h5>What kind of sauce would you like or no sauce? </h5>
                     <div class="row">
                         <div class="col ">
-                            <input type="radio" name="flavor" id="flavor1" class="hidden sauce" value="marinara sauce">  
+                            <h5>Marinara Sauce</h5>
+                            <input type="radio" name="flavor" id="flavor1" class="hidden sauce" value="marinaraSauce">
                             <label for="flavor1">
-                                <h5>Marinara Sauce</h5>
-                                <img class="sauce-image" src="./images/tomato-sauce.jpg" height="100px" width="100" alt="Tomato sauce">
+                                <img class="sauce-image" src="./images/tomato-sauce.jpg" height="100" width="100" alt="Marinara sauce">
                             </label>
                         </div>
-                        
+
                         <div class="col">
-                            <input type="radio" name="flavor" id="flavor2" class="hidden sauce" value="white sauce">
+                            <h5>White Sauce</h5>
+                            <input type="radio" name="flavor" id="flavor2" class="hidden sauce" value="whiteSauce">
                             <label for="flavor2">
-                                <h5>White Sauce</h5>
                                 <img class="sauce-image" src="./images/white-sauce.jpg" alt="White sauce">
                             </label>
                         </div>
-        
+
                         <div class="col">
-                            <input type="radio" name="flavor" id="flavor3" class="hidden sauce" value="barbeque sauce">
+                            <h5>Barbecue Sauce</h5>
+                            <input type="radio" name="flavor" id="flavor3" class="hidden sauce" value="barbequeSauce">
                             <label for="flavor3">
-                                <h5>Barbecue Sauce</h5>
                                 <img class="sauce-image" src="./images/pizza-size.jpeg" alt="Barbecue sauce">
                             </label>
                         </div>
 
-
                         <div class="col">
-                            <input type="radio" name="flavor" id="flavor4" class="hidden sauce" value="no sauce">
+                            <h5>No Sauce</h5>
+                            <input type="radio" name="flavor" id="flavor4" class="hidden sauce" value="noSauce">
                             <label for="flavor4">
-                                <h5>No Sauce</h5>
-                                <img class="sauce-image" src="./images/no-sauce.jpg" alt="Barbecue sauce">
+                                <img class="sauce-image" src="./images/no-sauce.jpg" alt="No sauce picture">
                             </label>
                         </div>
                     </div>
                 </div>
                 <!--/Sauce-->
-                
-                <!--Cheese-->
-                <!--class = hidden cheese will print out to the recept-->
+                    
+                <!--Cheese-->               
                 <div class="menu">
                     <h5>Would you like cheese or no cheese?</h5>
                     <div class="row">
                         <div class="col">
-                            <input type="radio" name="layer" id="cheese1" class="hidden cheese" value="No Cheese">  
+                            <h5>No Cheese</h5>
+                            <input type="radio" name="layer" class="hidden" id="cheese1" value="noCheese">
                             <label for="cheese1">
-                                <h5>No Cheese</h5>
-                                <img class="cheese-image" src="./images/no-symbol.png" height="100px" width="100" alt="No cheese">
+                                <img class="cheese-image" src="./images/no-symbol.png" height="100" width="100" alt="No cheese">
                             </label>
                         </div>
-                        
+
                         <div class="col">
-                            <input type="radio" name="layer" id="cheese2" class="hidden cheese" value="Regular">
+                            <h5>Regular</h5>
+                            <input type="radio" name="layer" class="hidden" id="cheese2" value="regular">
                             <label for="cheese2">
-                                <h5>Regular</h5>
                                 <img class="cheese-image" src="./images/mozzarella.jpg" alt="Regular">
                             </label>
                         </div>
-        
+
                         <div class="col">
-                            <input type="radio" name="layer" id="cheese3" class="hidden cheese" value="extra-cheese">
+                            <h5>Extra Cheese</h5>
+                            <input type="radio" name="layer" class="hidden" id="cheese3" value="Extra-cheese">
                             <label for="cheese3">
-                                <h5>Extra Cheese</h5>
                                 <img class="cheese-image" src="./images/morecheese.jpeg" alt="Extra Cheese">
                             </label>
                         </div>
@@ -196,72 +188,69 @@
                 <!--Vegetables-->
                 <div class="menu">
                     <h5>Choose your choice of vegetables: </h5>
-                    <h5>Extra vetables is a $1 more</h5>
-                    <div class="col">
-                        <div class="card-group mb-5 mt-5">
-                            <div class="card border-primary" style="width: 10rem;" >
-                                <img class="card-img-top" src="./images/tomatoe.jpg" alt=" Picture of a tomatoe">
-                                <div class="card-body">
-                                    <input class="veggies" type="checkbox" name="Vegetable" value="tomatoe"> 
-                                    <p class="card-text">Tomatoe</p>
-                                </div>
+                    <h5>First Choice of vegetables is free. Extra vegtables is $1 more.</h5>
+                    <div class="col row d-flex justify-content-center">
+                        <div class="card border-primary" style="width: 10rem;">
+                            <img class="card-img-top" src="./images/tomatoe.jpg" alt=" Picture of a tomatoe">
+                            <div class="card-body">
+                                <input class="veggies" type="checkbox" name="Vegetable" value="tomatoe">
+                                <p class="card-text">Tomatoe</p>
                             </div>
-                            
-                            <div class="card border-primary" style="width: 10rem;">
-                                <img class="card-img-top" src="./images/olives.jpeg" alt="Picture of olive">
-                                <div class="card-body">
-                                    <input class="veggies" type="checkbox" name="Vegetable" value="olive"> 
-                                    <p class="card-text">Olive</p>
-                                </div>
+                        </div>
+
+                        <div class="card border-primary" style="width: 10rem;">
+                            <img class="card-img-top" src="./images/olives.jpeg" alt="Picture of olive">
+                            <div class="card-body">
+                                <input class="veggies" type="checkbox" name="Vegetable" value="olive">
+                                <p class="card-text">Olive</p>
                             </div>
-                            
-                            <div class="card border-primary" style="width: 10rem;">
-                                <img class="card-img-top" src="./images/onions.jpeg" alt="Picture of onion">
-                                <div class="card-body">
-                                    <input class="veggies" type="checkbox" name="Vegetable" value="onion"> 
-                                    <p class="card-text">Onion</p>
-                                </div>
+                        </div>
+
+                        <div class="card border-primary" style="width: 10rem;">
+                            <img class="card-img-top" src="./images/onions.jpeg" alt="Picture of onion">
+                            <div class="card-body">
+                                <input class="veggies" type="checkbox" name="Vegetable" value="onion">
+                                <p class="card-text">Onion</p>
                             </div>
-                            
-                            <div class="card border-primary" style="width: 10rem;">
-                                <img class="card-img-top" src="./images/jalapenos.jpg" alt="Picture of jalapeno">
-                                <div class="card-body">
-                                    <input class="veggies" type="checkbox" name="Vegetable" value="jalapeno"> 
-                                    <p class="card-text">Jalapenos</p>
-                                </div>
+                        </div>
+
+                        <div class="card border-primary" style="width: 10rem;">
+                            <img class="card-img-top" src="./images/jalapenos.jpg" alt="Picture of jalapeno">
+                            <div class="card-body">
+                                <input class="veggies" type="checkbox" name="Vegetable" value="jalapeno">
+                                <p class="card-text">Jalapenos</p>
                             </div>
-                            
-                            <div class="card border-primary" style="width: 10rem;">
-                                <img class="card-img-top" src="./images/mushrooms.jpg" alt="Picture of mushroom">
-                                <div class="card-body">
-                                    <input class="veggies" type="checkbox" name="Vegetable" value="mushroom"> 
-                                    <p class="card-text">Mushroom</p>
-                                </div>
+                        </div>
+
+                        <div class="card border-primary" style="width: 10rem;">
+                            <img class="card-img-top" src="./images/mushrooms.jpg" alt="Picture of mushroom">
+                            <div class="card-body">
+                                <input class="veggies" type="checkbox" name="Vegetable" value="mushroom">
+                                <p class="card-text">Mushroom</p>
                             </div>
-                            
-                        
-                            <div class="card border-primary" style="width: 10rem;">
-                                <img class="card-img-top" src="./images/spinach.jpg" alt="picture of spinach">
-                                <div class="card-body">
-                                    <input class="veggies" type="checkbox" name="Vegetable" value="spinach"> 
-                                    <p class="card-text">Spinach</p>
-                                </div>
+                        </div>
+
+                        <div class="card border-primary" style="width: 10rem;">
+                            <img class="card-img-top" src="./images/spinach.jpg" alt="picture of spinach">
+                            <div class="card-body">
+                                <input class="veggies" type="checkbox" name="Vegetable" value="spinach">
+                                <p class="card-text">Spinach</p>
                             </div>
-                            
-                            <div class="card border-primary" style="width: 10rem;">
-                                <img class="card-img-top" src="./images/green-pepper.jpeg" alt="picture of green pepper">
-                                <div class="card-body">
-                                    <input class="veggies" type="checkbox" name="Vegetable" value="greenpepper"> 
-                                    <p class="card-text">Green Pepper</p>
-                                </div>
+                        </div>
+
+                        <div class="card border-primary" style="width: 10rem;">
+                            <img class="card-img-top" src="./images/green-pepper.jpeg" alt="picture of green pepper">
+                            <div class="card-body">
+                                <input class="veggies" type="checkbox" name="Vegetable" value="greenpepper">
+                                <p class="card-text">Green Pepper</p>
                             </div>
-                            
-                            <div class="card border-primary" style="width: 10rem;">
-                                <img class="card-img-top" src="./images/pineapple.jpeg" alt="picture of pineapple">
-                                <div class="card-body">
-                                    <input class="veggies" type="checkbox" name="Vegetable" value="pineapple"> 
-                                    <p class="card-text">Pineapple</p>
-                                </div>
+                        </div>
+
+                        <div class="card border-primary" style="width: 10rem;">
+                            <img class="card-img-top" src="./images/pineapple.jpeg" alt="picture of pineapple">
+                            <div class="card-body">
+                                <input class="veggies" type="checkbox" name="Vegetable" value="pineapple">
+                                <p class="card-text">Pineapple</p>
                             </div>
                         </div>
                     </div>
@@ -270,98 +259,87 @@
 
                 <!--Crust-->
                 <div class="menu">
-                <h5>What type of crust would you like?</h5>
-                
-                    <div class="row mt-5 mb-4">
-
-                        <input type="radio" name="outsidelayer" id="crust1" class="hidden crust" value="Plain Crust">
-                        <label for="crust1">    
-                            <div class="card text-black bg-primary" style="max-width: 14rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Plain Crust</h5>
-                                <p class="card-text">Just plain no flavor</p>
-                            </div>
-                            </div>
-                        </label>
-
-                        <input type="radio" name="outsidelayer" id="crust2" class="hidden crust" value="Cheese Stuffed Crust">
-                        <label for="crust2">
-                            <div class="card text-black bg-secondary" style="max-width: 14rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Cheese Stuffed Crust</h5>
-                                <h5>Extra charge of $3</h5>
-                                <p class="card-text">Melted cheese stuff in crust.</p>
-                            </div>
-                            </div>
-                        </label>
-
-                        <input type="radio" name="outsidelayer" id="crust3" class="hidden crust" value="Garlic Butter Crust">
-                        <label for="crust3">
-                            <div class="card text-black bg-success" style="max-width: 14rem;">
+                    <h5>What type of crust would you like?</h5>
+                  
+                    <div class="crustRow row">
+                        <div class="crustCol col">
+                            <div class="crust card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Garlic Butter Crust</h5>
-                                    <p class="card-text">Hint of garlic cloves in crust</p>
+                                    <input type="radio" name="outsidelayer" id="crust1" value="plainCrust">
+                                    <span>Plain</span>
                                 </div>
                             </div>
-                        </label>
+                        </div>
 
-                        <input type="radio" name="outsidelayer" id="crust4" class="hidden crust" value="Spicy Crust">
-                        <label for="crust4">
-                            <div class="card text-black bg-danger" style="max-width: 13rem;">
+                        <div class="crustCol col">
+                            <div class="crust card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Spicy Crust</h5>
-                                    <p class="card-text">Topped with spicy seasoning </p>
+                                    <input type="radio" name="outsidelayer" id="crust2" value="cheeseCrust">
+                                    <span>Cheese Stuffed</span>
                                 </div>
                             </div>
-                        </label>
+                        </div>
 
-                        <input type="radio" name="outsidelayer" id="crust5" class="hidden crust" value="House Special Crust">
-                        <label for="crust5">
-                            <div class="card text-black bg-warning" style="max-width: 13rem;">
+                        <div class="crustCol col">
+                            <div class="crust card">
                                 <div class="card-body">
-                                    <h5 class="card-title">House Special Crust</h5>
-                                    <p class="card-text">Cinnamon flavored crust</p>
+                                    <input type="radio" name="outsidelayer" id="crust3" value="garlicButterCrust">
+                                    <span>Garlic Butter Crust</span>
                                 </div>
                             </div>
-                        </label>
+                        </div>
 
-                    </div>
+                        <div class="crustCol col">
+                            <div class="crust card">
+                                <div class="card-body">
+                                    <input type="radio" name="outsidelayer" id="crust4" value="spicyCrust"><br>
+                                    <span>Spicy Crust</span><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="crustCol col">
+                            <div class="crust card">
+                                <div class="card-body">
+                                    <input type="radio" name="outsidelayer" id="crust5" value="cinnamonCrust"><br>
+                                    <span>Cinnamon</span><br>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>                   
                 </div>
-            <!--/crust-->
-            
+                <!--/crust-->
             </form><br>
         </div>
 
-            <!--Receipt-->
-            <div class="controls">
-                <div class="button" onclick="getReceipt()">
-                    <p>Place Order</p>
-                </div>
-                <div class="button" onclick="clearAll()">
-                    <p>Cancel</p>
-                </div>
+        <!--Receipt-->
+        <div class="controls">
+            <div class="button" onclick="getReceipt()">
+                <p>Place Order</p>
             </div>
-        
-            <div id="cart">
-                <div id="title1"><h3>You Ordered:</h3></div>
-                <div id="title2"><h3>Subtotal:</h3></div>
-                <div id="showText1"></div>
-                <div id="showText2"></div>
-                <div id="totalPrice1"><h3>Total Price:</h3></div>
-                <div id="totalPrice2"></div>
+            <div class="button" onclick="clearAll()">
+                <p>Cancel</p>
             </div>
-            <!--/Receipt-->
-        <script src="./js/pizza_drill_basic.js"></script>
-    
+        </div>
 
-
-
+        <form id="reset">
+        <div id="cart">
+            <div id="title1"><h3>You Ordered:</h3></div>
+            <div id="title2"><h3>Subtotal:</h3></div>
+            <div id="showText1"></div>
+            <div id="showText2"></div>
+            <div id="totalPrice1"><h3>Total Price:</h3></div>
+            <div id="totalPrice2"></div>
+        </div>
+        </form>        
+        <!--/Receipt-->
         <!--Footer-->
         <div>
             <div id="footer">
                 &copy; 2018 Thai Vang
             </div>
         </div>
+        <script src="./js/pizza_drill_basic.js"></script>
         <!--/Footer-->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
